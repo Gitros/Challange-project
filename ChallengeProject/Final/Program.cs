@@ -59,10 +59,9 @@ foreach (string name in studentNames)
 
     int gradedAssignments = 0;
     int gradedExtraCreditAssignments = 0;
-
     int sumExamScores = 0;
-    int sumExtraCreditScores = 0;
 
+    decimal sumExtraCreditScores = 0;
     decimal currentStudentGrade = 0;
     decimal currentStudentExamScore = 0;
     decimal currentStudentExtraCreditScore = 0;
@@ -78,7 +77,7 @@ foreach (string name in studentNames)
 
         if (gradedAssignments <= examAssignments)
         {
-            sumExamScores = sumExamScores + score;
+            sumExamScores += score;
         }
 
         else
